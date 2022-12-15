@@ -1,4 +1,4 @@
-package com.example.eserciziodevelhope.Activity
+package com.example.eserciziodevelhope.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
