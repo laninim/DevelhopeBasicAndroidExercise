@@ -10,4 +10,8 @@
     <string name="button_text1">Hai premuto il bottone 1</string>
     <string name="button_text2">Hai premuto il bottone 2</string>
     <string name="button_text3">Hai premuto il bottone 3</string>
+    <string name="settings">Impostazioni</string>
+    <string name="contacts">Contatti</string>
+    <string name="settingsfragmenttitle">Impostazioni</string>
+    <string name="mantieni_impostazioni">Mantieni Impostazioni</string>
 </resources>

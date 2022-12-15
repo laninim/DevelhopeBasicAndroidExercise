@@ -10,7 +10,6 @@ import com.example.eserciziodevelhope.R
 import com.example.eserciziodevelhope.databinding.FragmentMainBinding
 
 
-
 class MainFragment : Fragment() {
 
 
