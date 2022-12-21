@@ -14,4 +14,7 @@
     <string name="contacts">Contatti</string>
     <string name="settingsfragmenttitle">Impostazioni</string>
     <string name="mantieni_impostazioni">Mantieni Impostazioni</string>
+    <string name="outputtextview">outputtextview</string>
+    <string name="disattiva_notifiche">Disattiva Notifiche</string>
+    <string name="risparmio_energetico">Risparmio energetico</string>
 </resources>
