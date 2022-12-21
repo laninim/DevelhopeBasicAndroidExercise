@@ -40,6 +40,7 @@
             android:layout_marginStart="@dimen/switchwidget_margin"
             android:layout_marginEnd="@dimen/switchwidget_margin"
             android:layout_weight="1"
+            android:textSize="@dimen/appbaseTextSize"
             android:text="@string/disattiva_notifiche" />
 
         <Switch
@@ -49,6 +50,7 @@
             android:layout_marginStart="@dimen/switchwidget_margin"
             android:layout_marginEnd="@dimen/switchwidget_margin"
             android:layout_weight="1"
+            android:textSize="@dimen/appbaseTextSize"
             android:text="@string/risparmio_energetico" />
 
     </LinearLayout>
