@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_mainFragment_to_settingsFragment"
             app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_contact_fragment"
+            app:destination="@id/contact_fragment" />
     </fragment>
     <fragment
         android:id="@+id/settingsFragment"
@@ -21,6 +24,15 @@
         tools:layout="@layout/fragment_settings" >
         <action
             android:id="@+id/action_settingsFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contact_fragment"
+        android:name="com.example.eserciziodevelhope.fragment.contact_fragment"
+        android:label="fragment_contact_fragment"
+        tools:layout="@layout/fragment_contact_fragment" >
+        <action
+            android:id="@+id/action_contact_fragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
 </navigation>

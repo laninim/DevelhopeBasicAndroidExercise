@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
                 true
             }
             R.id.optionmenucontacts -> {
-                Toast.makeText(applicationContext, "Contacts", Toast.LENGTH_SHORT).show()
+                navController?.navigate(R.id.action_mainFragment_to_contact_fragment)
                 true
             }
             else -> super.onOptionsItemSelected(item)
