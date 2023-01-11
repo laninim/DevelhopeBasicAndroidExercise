@@ -1,18 +1,16 @@
 package com.example.eserciziodevelhope.activity
 
-import android.app.Activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
-import android.widget.Toast
+import androidx.appcompat.widget.Toolbar
 import androidx.navigation.NavController
-import androidx.navigation.NavHost
-import androidx.navigation.Navigation
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.fragment.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.onNavDestinationSelected
+import androidx.navigation.ui.setupWithNavController
 import com.example.eserciziodevelhope.R
 
 class MainActivity : AppCompatActivity() {
@@ -22,8 +20,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        setSupportActionBar(findViewById(R.id.toolbar))
         val navHost = supportFragmentManager.findFragmentById(R.id.nav_host_fragment_container) as NavHostFragment
         navController = navHost.navController
+
+        val config = AppBarConfiguration(navController.graph)
+        findViewById<Toolbar>(R.id.toolbar).setupWithNavController(navController, config)
+
     }
 
 
@@ -39,12 +42,12 @@ class MainActivity : AppCompatActivity() {
 
 
         return when (item.itemId) {
-            R.id.optionmenusettings -> {
-                navController?.navigate(R.id.action_mainFragment_to_settingsFragment)
+            R.id.settingsFragment -> {
+                item.onNavDestinationSelected(navController)
                 true
             }
-            R.id.optionmenucontacts -> {
-                navController?.navigate(R.id.action_mainFragment_to_contact_fragment)
+            R.id.contact_fragment -> {
+                item.onNavDestinationSelected(navController)
                 true
             }
             else -> super.onOptionsItemSelected(item)

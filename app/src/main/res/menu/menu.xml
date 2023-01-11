@@ -3,10 +3,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/optionmenusettings"
+        android:id="@+id/settingsFragment"
         android:title="@string/settings"
         app:showAsAction="ifRoom" />
     <item
-        android:id="@+id/optionmenucontacts"
+        android:id="@+id/contact_fragment"
         android:title="@string/contacts" />
 </menu>
