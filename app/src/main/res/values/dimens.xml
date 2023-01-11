@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_margintop">60dp</dimen>
+    <dimen name="textview_margintop">76dp</dimen>
+    <dimen name="title_textsize">24sp</dimen>
+    <dimen name="title_margin">32dp</dimen>
+    <dimen name="outputtextviewmargin">24dp</dimen>
+    <dimen name="outputtextviewsize">24sp</dimen>
+    <dimen name="settingtitle_margintop">24dp</dimen>
+    <dimen name="settingstitletextsize">24sp</dimen>
+    <dimen name="settinglinearlayoutmargin">32dp</dimen>
+    <dimen name="settingslineartopmargin">8dp</dimen>
+    <dimen name="switch_heightsize">48dp</dimen>
+    <dimen name="switchwidget_margin">32dp</dimen>
+    <dimen name="checkboxtextview_margintop">32dp</dimen>
+    <dimen name="checkboxtextTextSize">20sp</dimen>
+    <dimen name="checkbox_margintop">20dp</dimen>
+    <dimen name="subtitle_textview">18sp</dimen>
+    <dimen name="appbaseTextSize">18sp</dimen>
+</resources>

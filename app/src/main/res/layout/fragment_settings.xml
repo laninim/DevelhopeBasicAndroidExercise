@@ -11,11 +11,11 @@
         android:id="@+id/settingsView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="@dimen/settingtitle_margintop"
         android:text="@string/settingsfragmenttitle"
         android:textAlignment="center"
-        android:textColor="#030303"
-        android:textSize="24sp"
+        android:textColor="@color/settingstitlecolor"
+        android:textSize="@dimen/settingstitletextsize"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,11 +23,11 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="397dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginStart="@dimen/settinglinearlayoutmargin"
+        android:layout_marginTop="@dimen/settingslineartopmargin"
+        android:layout_marginEnd="@dimen/settinglinearlayoutmargin"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,20 +36,22 @@
         <Switch
             android:id="@+id/switch1"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginEnd="32dp"
+            android:layout_height="@dimen/switch_heightsize"
+            android:layout_marginStart="@dimen/switchwidget_margin"
+            android:layout_marginEnd="@dimen/switchwidget_margin"
             android:layout_weight="1"
-            android:text="Disattiva Notifiche" />
+            android:textSize="@dimen/appbaseTextSize"
+            android:text="@string/disattiva_notifiche" />
 
         <Switch
             android:id="@+id/switch2"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginEnd="32dp"
+            android:layout_height="@dimen/switch_heightsize"
+            android:layout_marginStart="@dimen/switchwidget_margin"
+            android:layout_marginEnd="@dimen/switchwidget_margin"
             android:layout_weight="1"
-            android:text="Risparmio energetico" />
+            android:textSize="@dimen/appbaseTextSize"
+            android:text="@string/risparmio_energetico" />
 
     </LinearLayout>
 
@@ -57,9 +59,9 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="@dimen/checkboxtextview_margintop"
         android:text="@string/mantieni_impostazioni"
-        android:textSize="20sp"
+        android:textSize="@dimen/checkboxtextTextSize"
         app:layout_constraintEnd_toStartOf="@+id/checkBox"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -69,7 +71,7 @@
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="@dimen/checkbox_margintop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/textView4"
